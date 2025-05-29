@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left-Aligned Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .navbar {
+      background-color: black;
+      display: flex;
+      justify-content: flex-start;
+      box-shadow: 0 4px 2px -2px orange;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+      text-align: center;
+      border-right: 1px solid orange; /* Border for all items */
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Product</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Users</a>
+    <a href="#">Login</a> <!-- Now has border on the right too -->
+  </div>
+
+</body>
+</html>
